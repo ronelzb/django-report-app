@@ -36,3 +36,22 @@ In order to install all the necessary pre-requisites you can do the following st
 ![Django app installation](assets/img/django-app-installation.png)
 
 * Also, we can navigate to `http://127.0.0.1:8000/admin/` and test your created admin user.
+
+## Features
+* Securing your Django project secret key after installation ([source](https://dev.to/vladyslavnua/how-to-protect-your-django-secret-and-oauth-keys-53fl)):
+  * In your *venv* install Python dotenv: `pip install python-dotenv`.
+  * In your `settings.py` file paste the following two lines:
+    ```
+    from dotenv import load_dotenv
+    load_dotenv()
+    ```
+  * Create a file titled `.env` in the root of your project, which will serve as your environment variable secret storage for your project, in the file declare your keys such as:
+    ```
+    # .env
+    SECRET_KEY=ek0@9u(zemu^+%*-z3!&y9mu_7u+edg9%)c%423mdoec-mi*
+    ```
+  * In your `settings.py` retrieve the key(s) as follows:
+    ```
+    # settings.py
+    SECRET_KEY = str(os.getenv('SECRET_KEY'))
+    ```

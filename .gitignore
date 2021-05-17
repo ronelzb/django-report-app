@@ -99,12 +99,11 @@ __pycache__/
 # *.sage.py
 
 # Environments
-# .env
-# .venv
-# env/
+.env
+.venv
+env/
 venv/
-# ENV/
-# env.bak/
+env.bak/
 venv.bak/
 
 # Spyder project settings
