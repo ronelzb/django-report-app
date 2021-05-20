@@ -55,3 +55,9 @@ In order to install all the necessary pre-requisites you can do the following st
     # settings.py
     SECRET_KEY = str(os.getenv('SECRET_KEY'))
     ```
+* This project uses the following packages as well:
+  *  [pillow](https://pypi.org/project/Pillow/) (Python Imaging Library).
+  *  [django-crispy-forms](https://django-crispy-forms.readthedocs.io/) for forms.
+  *  matplolib, seaborn, pandas for data science and plots.
+  *  xhtml2pdf to export reports to pdf.
+*  You can check the whole list of requirements at requirement.txt in the project folder.
